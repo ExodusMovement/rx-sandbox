@@ -1,5 +1,5 @@
+import { mapTo } from '@exodus/rxjs/operators';
 import { expect } from 'chai';
-import { mapTo } from 'rxjs/operators';
 import * as idx from '../src/index';
 
 describe('rxSandbox', () => {

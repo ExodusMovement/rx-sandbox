@@ -1,5 +1,5 @@
-import { Notification } from 'rxjs';
-import { SubscriptionLog } from 'rxjs/internal/testing/SubscriptionLog';
+import { Notification } from '@exodus/rxjs';
+import { SubscriptionLog } from '@exodus/rxjs/internal/testing/SubscriptionLog';
 
 /**
  * Represents interface for single metadata value emitted by HotObservable<T> or ColdObservable<T>

@@ -1,6 +1,6 @@
-import { Observable } from 'rxjs';
-import { ColdObservable } from 'rxjs/internal/testing/ColdObservable';
-import { HotObservable } from 'rxjs/internal/testing/HotObservable';
+import { Observable } from '@exodus/rxjs';
+import { ColdObservable } from '@exodus/rxjs/internal/testing/ColdObservable';
+import { HotObservable } from '@exodus/rxjs/internal/testing/HotObservable';
 import { marbleAssert } from './assert/marbleAssert';
 import { parseObservableMarble } from './marbles/parseObservableMarble';
 import { parseSubscriptionMarble } from './marbles/parseSubscriptionMarble';
@@ -16,7 +16,7 @@ export {
   getObservableMessage,
   expectedObservable,
   expectedSubscription,
-  RxSandboxInstance
+  RxSandboxInstance,
 } from './RxSandboxInstance';
 
 //workaround TS4029 by explicitly import types and avoid unused import error
@@ -39,10 +39,10 @@ const rxSandbox: RxSandbox = {
       getMessages: scheduler.getMessages.bind(scheduler) as typeof scheduler.getMessages,
       e: <T = string>(marble: string, value?: { [key: string]: T } | null, error?: any) =>
         parseObservableMarble(marble, value, error, true, frameTimeFactor, frameTimeFactor * maxFrameValue),
-      s: (marble: string) => parseSubscriptionMarble(marble, frameTimeFactor, frameTimeFactor * maxFrameValue)
+      s: (marble: string) => parseSubscriptionMarble(marble, frameTimeFactor, frameTimeFactor * maxFrameValue),
     };
   },
-  marbleAssert: marbleAssert
+  marbleAssert: marbleAssert,
 };
 
 export { rxSandbox, TestMessage, marbleAssertion, next, error, complete, subscribe };

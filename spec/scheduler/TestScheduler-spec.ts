@@ -1,8 +1,8 @@
+import { AsyncAction } from '@exodus/rxjs/internal/scheduler/AsyncAction';
+import { ColdObservable } from '@exodus/rxjs/internal/testing/ColdObservable';
+import { HotObservable } from '@exodus/rxjs/internal/testing/HotObservable';
+import { mapTo, windowCount } from '@exodus/rxjs/operators';
 import { expect } from 'chai';
-import { AsyncAction } from 'rxjs/internal/scheduler/AsyncAction';
-import { ColdObservable } from 'rxjs/internal/testing/ColdObservable';
-import { HotObservable } from 'rxjs/internal/testing/HotObservable';
-import { mapTo, windowCount } from 'rxjs/operators';
 import { parseObservableMarble } from '../../src/marbles/parseObservableMarble';
 import { complete, error, next, subscribe, TestMessage } from '../../src/message/TestMessage';
 import { TestScheduler } from '../../src/scheduler/TestScheduler';

@@ -1,4 +1,4 @@
-import { ColdObservable } from 'rxjs/internal/testing/ColdObservable';
+import { ColdObservable } from '@exodus/rxjs/internal/testing/ColdObservable';
 import { complete, error as e, next, TestMessage } from '../message/TestMessage';
 import { ObservableMarbleToken } from './ObservableMarbleToken';
 import { SubscriptionMarbleToken } from './SubscriptionMarbleToken';
@@ -219,5 +219,5 @@ export {
   ObservableTokenParseAccumulator,
   SubscriptionTokenParseAccumulator,
   subscriptionTokenParseReducer,
-  observableTokenParseReducer
+  observableTokenParseReducer,
 };

@@ -1,5 +1,5 @@
+import { Notification } from '@exodus/rxjs';
 import { expect } from 'chai';
-import { Notification } from 'rxjs';
 import { complete, error, next, subscribe, TestMessageValue } from '../../src/message/TestMessage';
 
 describe('TestMessageValue', () => {

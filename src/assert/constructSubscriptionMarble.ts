@@ -1,4 +1,4 @@
-import { SubscriptionLog } from 'rxjs/internal/testing/SubscriptionLog';
+import { SubscriptionLog } from '@exodus/rxjs/internal/testing/SubscriptionLog';
 import { ObservableMarbleToken } from '../marbles/ObservableMarbleToken';
 import { SubscriptionMarbleToken } from '../marbles/SubscriptionMarbleToken';
 

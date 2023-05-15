@@ -1,8 +1,8 @@
-import { Notification, Observable, Subscription } from 'rxjs';
-import { AsyncAction } from 'rxjs/internal/scheduler/AsyncAction';
-import { VirtualAction, VirtualTimeScheduler } from 'rxjs/internal/scheduler/VirtualTimeScheduler';
-import { ColdObservable } from 'rxjs/internal/testing/ColdObservable';
-import { HotObservable } from 'rxjs/internal/testing/HotObservable';
+import { Notification, Observable, Subscription } from '@exodus/rxjs';
+import { AsyncAction } from '@exodus/rxjs/internal/scheduler/AsyncAction';
+import { VirtualAction, VirtualTimeScheduler } from '@exodus/rxjs/internal/scheduler/VirtualTimeScheduler';
+import { ColdObservable } from '@exodus/rxjs/internal/testing/ColdObservable';
+import { HotObservable } from '@exodus/rxjs/internal/testing/HotObservable';
 import { parseObservableMarble } from '../marbles/parseObservableMarble';
 import { SubscriptionMarbleToken } from '../marbles/SubscriptionMarbleToken';
 import { TestMessage } from '../message/TestMessage';

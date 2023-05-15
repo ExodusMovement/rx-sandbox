@@ -1,5 +1,5 @@
+import { of } from '@exodus/rxjs';
 import { expect } from 'chai';
-import { of } from 'rxjs';
 import { calculateSubscriptionFrame } from '../../src/scheduler/calculateSubscriptionFrame';
 import { TestScheduler } from '../../src/scheduler/TestScheduler';
 

@@ -1,6 +1,6 @@
-import { Observable } from 'rxjs';
-import { ColdObservable } from 'rxjs/internal/testing/ColdObservable';
-import { HotObservable } from 'rxjs/internal/testing/HotObservable';
+import { Observable } from '@exodus/rxjs';
+import { ColdObservable } from '@exodus/rxjs/internal/testing/ColdObservable';
+import { HotObservable } from '@exodus/rxjs/internal/testing/HotObservable';
 import { parseSubscriptionMarble } from '../marbles/parseSubscriptionMarble';
 
 const calculateSubscriptionFrame = (
@@ -25,7 +25,7 @@ const calculateSubscriptionFrame = (
       return {
         subscribedFrame: 0,
         unsubscribedFrame:
-          unsubscribedFrame === Number.POSITIVE_INFINITY ? unsubscribedFrame : unsubscribedFrame - subscribedFrame
+          unsubscribedFrame === Number.POSITIVE_INFINITY ? unsubscribedFrame : unsubscribedFrame - subscribedFrame,
       };
     }
     source = (source as any).source;
