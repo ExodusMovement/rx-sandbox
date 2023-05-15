@@ -84,11 +84,10 @@
   },
   "files": [
     "dist",
-    "src",
     "CHANGELOG.md",
     "LICENSE",
     "package.json",
     "README.md",
-    "tsconfig.json"
+    "!**/*.map"
   ]
 }
