@@ -1,6 +1,6 @@
 {
   "name": "@exodus/rx-sandbox",
-  "version": "1.0.4-exodus.3",
+  "version": "1.0.4-exodus.4",
   "description": "Marble diagram DSL based test suite for RxJS 6",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
